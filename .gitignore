@@ -7,3 +7,5 @@ coverage/
 dist/
 .editorconfig
 .yo-rc.json
+karma_html
+protractor-e2e

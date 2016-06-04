@@ -1,7 +1,7 @@
 'use strict';
 
 var paths = require('./.yo-rc.json')['generator-gulp-angular'].props.paths;
-
+var HtmlReporter = require('protractor-html-screenshot-reporter');
 // An example configuration file.
 exports.config = {
   // The address of a running selenium server.
@@ -12,7 +12,14 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-  
+
+  onPrepare: function() {
+    // Add a screenshot reporter and store screenshots to `/tmp/screnshots`:
+    jasmine.getEnv().addReporter(new HtmlReporter({
+      baseDirectory: 'protractor-e2e'
+    }));
+  },
+
   baseUrl: 'http://localhost:3000',
 
   // Spec patterns are relative to the current working directory when
