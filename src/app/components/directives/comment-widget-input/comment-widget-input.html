@@ -1,0 +1,15 @@
+<div class="comment-widget-input-wrapper">
+  <div class="textfield" contenteditable="PLAINTEXT-ONLY" placeholder="Join the discussion…"
+       style="overflow: auto; max-height: 350px;" ng-focus="vm.showAuth=true"></div>
+  <div class="auth-wrapper" ng-if="vm.showAuth">
+    <div class="auth-social">
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+      <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+    </div>
+    <div class="auth-username">
+      <input type="text" placeholder="User Name"   />
+    </div>
+  </div>
+</div>
+
