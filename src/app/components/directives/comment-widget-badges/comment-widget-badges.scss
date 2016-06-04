@@ -1,0 +1,43 @@
+
+.comment-widget-badges-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  .comments-count-wrapper, .recommendation-count-wrapper {
+    width: 50%;
+  }
+  .comments-count {
+    position: relative;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    &:after {
+      content: attr(data-badge);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      top: -11px;
+      right: -45px;
+      font-weight: 600;
+      font-size: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ff4081;
+      color: #fff;
+    }
+
+  }
+}
+@media screen and (max-width: 767px) {
+  .comment-widget-badges-wrapper {
+    flex-direction: column;
+    >div{
+      margin: 1rem;
+    }
+  }
+}
