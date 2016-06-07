@@ -1,0 +1,21 @@
+<div class="comment-widget-list-wrapper">
+  <div ng-repeat="commentItem in vm.commentList" class="comment-item-wrapper">
+    <div class="user-info">
+      <div class="avatar-img"></div>
+      <div class="user-name" ng-bind="commentItem.user_name"></div>
+    </div>
+    <div class="comment-main-wrapper">
+      <div class="comment-txt" ng-bind="commentItem.comment_txt"></div>
+      <div class="comment-interaction">
+        <div class="thumb-up-wrapper">
+          <i class="fa fa-thumbs-up" aria-hidden="true"><span ng-bind="commentItem.points_up"></span></i>
+        </div>
+        <div class="thumb-down-wrapper">
+          <i class="fa fa-thumbs-down" aria-hidden="true"><span ng-bind="commentItem.points_down"></span></i>
+        </div>
+        <div class="share"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
+        <div class="creation-date"><i class="fa fa-calendar" aria-hidden="true"><span ng-bind="commentItem.creation_date"></span></i></div>
+      </div>
+    </div>
+  </div>
+</div>

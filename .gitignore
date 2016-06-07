@@ -9,3 +9,4 @@ dist/
 .yo-rc.json
 karma_html
 protractor-e2e
+src/config
