@@ -24,9 +24,11 @@ angular
 Use comment-widget directive
 
 ```javascript
-<ng-comment-widget>
-</ng-comment-widget>
+    <div class="comment-widget-main-badges" comment-widget-badges></div>
+    <div class="comment-widget-main-input" comment-widget-input></div>
+    <div class="comment-widget-main-list" comment-widget-list></div>
 ```
 
 # Server NodeJs Backend
 
+Refer to [git-repo](https://github.com/mo3taz-abdallh/angular-commentWidget-server)
