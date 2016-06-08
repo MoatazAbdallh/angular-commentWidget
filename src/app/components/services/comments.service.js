@@ -8,13 +8,8 @@
     .service("CommentsList", CommentsList);
 
   /* @ngInject */
-  function CommentsList($http, $q,toastr) {
-    var CONFIG = null;
-    $http.get("config/app-config.json").then(function (result) {
-      CONFIG = result.data;
-    }, function (err) {
-      toastr.error("Sorry Couldn't load Config File", 'Error');
-    });
+  function CommentsList($http, $q,toastr,CONFIG) {
+
     this.getAppComments = function () {
       var deferred = $q.defer();
       $http({
