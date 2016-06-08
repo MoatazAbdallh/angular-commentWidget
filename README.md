@@ -6,7 +6,7 @@
 Consuming Google Analytics Core Reporting Service (Server - Server) Auth to display Reports &amp; dashboards with angularJS, NodeJS &amp; Google Charts.
 
 # Demo
-[Demo](http://mo3taz-abdallh.github.io/angular-commentWidget/)
+[Demo](https://travis-ci.org/mo3taz-abdallh/angular-commentWidget.svg?branch=master)
 
 # Client Side
 
