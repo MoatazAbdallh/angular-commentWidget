@@ -31,9 +31,15 @@
     /* @ngInject */
     function CommentWidgetBadgesController($scope) {
       var vm = this;
+      vm.incrementRecommendation = incrementRecommendation;
       CommentsList.getAppInfo().then(function (result) {
         vm.appInfo = result
       });
+      function incrementRecommendation() {
+        CommentsList.incrementRecommendation().then(function () {
+          vm.appInfo.recommendation_count++;
+        })
+      }
     }
   }
 })();

@@ -6,6 +6,14 @@
   flex-direction: row;
   .comments-count-wrapper, .recommendation-count-wrapper {
     width: 50%;
+    .fa{
+      font-size: 35px;
+      color: #ccc;
+      margin-left: 3.5rem;
+      &:hover{
+        color:#3c569a
+      }
+    }
   }
   .comments-count {
     position: relative;
@@ -30,6 +38,7 @@
       background: #ff4081;
       color: #fff;
     }
+
 
   }
 }
