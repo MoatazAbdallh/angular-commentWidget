@@ -1,5 +1,5 @@
 {
-  "name": "commentWidget",
+  "name": "angular-commentWidget",
   "version": "1.0.0",
   "dependencies": {
     "angular-animate": "~1.5.6",
@@ -23,5 +23,30 @@
         "fonts/*"
       ]
     }
-  }
+  },
+  "homepage": "https://github.com/mo3taz-abdallh/angular-commentWidget",
+  "authors": [
+    "Moataz Abdallh <moataz.abdallh@gmail.com>"
+  ],
+  "description": "AngularJS Comment Widget which allows you to have full interaction with yours audience.",
+  "main": [
+    "dist/scripts/app.js",
+    "dist/styles/app.css"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "AngularJs",
+    "Comment",
+    "Interaction"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
