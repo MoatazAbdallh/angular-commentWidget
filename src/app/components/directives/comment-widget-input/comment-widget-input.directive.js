@@ -33,7 +33,20 @@
     function CommentWidgetInputController($rootScope) {
       var vm = this;
       vm.appInfo = CommentsList.getAppInfo();
+      vm.submitComment = submitComment;
+      vm.updateComment_txt = updateComment_txt;
 
+      function submitComment(){
+        var data = {};
+        data.comment_txt = vm.comment_txt;
+        data.user_name = vm.user_name;
+        CommentsList.submitComment(data).then(function(result){
+          $rootScope.$broadcast("ADDED_NEW_COMMENT",result)
+        })
+      }
+      function updateComment_txt(){
+        vm.comment_txt = document.querySelector(".textfield").innerHTML.replace("&nbsp;","").trim();
+      }
     }
   }
 })();

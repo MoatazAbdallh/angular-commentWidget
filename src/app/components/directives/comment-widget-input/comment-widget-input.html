@@ -1,6 +1,6 @@
 <div class="comment-widget-input-wrapper">
   <div class="textfield" contenteditable="PLAINTEXT-ONLY" placeholder="Join the discussion…"
-       style="overflow: auto; max-height: 350px;" ng-focus="vm.showAuth=true"></div>
+       style="overflow: auto; max-height: 350px;" ng-focus="vm.showAuth=true" ng-blur="vm.updateComment_txt()" ng-model="vm.comment_txt"></div>
   <div class="auth-wrapper" ng-if="vm.showAuth">
     <div class="auth-social">
       <i class="fa fa-facebook-official" aria-hidden="true"></i>
@@ -8,7 +8,12 @@
       <i class="fa fa-google-plus-square" aria-hidden="true"></i>
     </div>
     <div class="auth-username">
-      <input type="text" placeholder="User Name"   />
+      <input type="text" placeholder="User Name" ng-model="vm.user_name"/>
+      <div class="save-comment-wrapper" ng-click="vm.submitComment()">
+        <a  class="save-comment-btn">
+          Submit
+        </a>
+      </div>
     </div>
   </div>
 </div>
