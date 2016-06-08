@@ -29,6 +29,13 @@ Use comment-widget directive
     <div class="comment-widget-main-list" comment-widget-list></div>
 ```
 
+Place src/config/app-config.json
+```javascript
+    "app_id": "APP ID",
+    "base_url":"SERVER SIDE URL"
+```
+Note: you would have interface for creating new app soon.
+
 # Server NodeJs Backend
 
 Refer to [git-repo](https://github.com/mo3taz-abdallh/angular-commentWidget-server)
