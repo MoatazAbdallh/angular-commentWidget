@@ -46,54 +46,78 @@
       .comment-interaction {
         display: flex;
         flex-direction: row;
-        .thumb-up-wrapper {
-          width: 10%;
-          text-align: left;
-          .fa {
-            font-size: 30px;
-            color: #ccc;
-            &:hover{
-              color:#3c569a
+        .social-interaction {
+          display: flex;
+          flex-direction: row;
+          > div {
+            margin: 1.2rem;
+          }
+          .thumb-up-wrapper {
+            width: 10%;
+            text-align: left;
+            .fa {
+              font-size: 30px;
+              color: #ccc;
+              &:hover {
+                color: #3c569a
+              }
+              span {
+                margin-left: 5px;
+              }
             }
-            span {
-              margin-left: 5px;
+          }
+          .thumb-down-wrapper {
+            width: 10%;
+            text-align: left;
+            .fa {
+              font-size: 30px;
+              color: #ccc;
+              &:hover {
+                color: #e31c2e;
+              }
+              span {
+                margin-left: 5px;
+              }
+            }
+          }
+          .share {
+            width: 10%;
+            text-align: left;
+            .fa {
+              font-size: 25px;
+              color: rgba(0, 0, 0, 0.5);
             }
           }
         }
-        .thumb-down-wrapper {
-          width: 10%;
-          text-align: left;
-          .fa {
-            font-size: 30px;
-            color: #ccc;
-            &:hover{
-              color: #e31c2e;
-            }
-            span {
-              margin-left: 5px;
-            }
-          }
-        }
-        .share {
-          width: 10%;
-          text-align: left;
-          .fa{
-            font-size: 25px;
-            color: rgba(0,0,0,0.5);
-          }
-        }
-        .creation-date{
-          width:80%;
+        .creation-date {
+          width: 80%;
           text-align: right;
-          .fa{
+          .fa {
             font-size: 25px;
-            color: rgba(0,0,0,0.5);
+            color: rgba(0, 0, 0, 0.5);
             span {
               margin-left: 5px;
             }
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comment-interaction {
+    flex-direction: column !important;
+    .social-interaction {
+      > div {
+        margin: 0.5rem;
+      }
+    }
+    > div {
+      margin: 1rem;
+    }
+    .creation-date {
+      text-align: left !important;
     }
   }
 }
