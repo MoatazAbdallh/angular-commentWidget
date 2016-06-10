@@ -10,3 +10,4 @@ dist/
 karma_html
 protractor-e2e
 src/config
+src/favicon.ico
