@@ -3,7 +3,7 @@
 [![Build Status via Travis CI](https://travis-ci.org/mo3taz-abdallh/angular-commentWidget.svg?branch=master)](https://travis-ci.org/mo3taz-abdallh/angular-commentWidget)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/mo3taz-abdallh/angular-commentWidget)
 
-Consuming Google Analytics Core Reporting Service (Server - Server) Auth to display Reports &amp; dashboards with angularJS, NodeJS &amp; Google Charts.
+angular-commentWidget provides you with interactive communication with your audience.
 
 # Demo
 [Demo](http://mo3taz-abdallh.github.io/angular-commentWidget/)
