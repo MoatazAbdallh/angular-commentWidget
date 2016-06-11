@@ -43,10 +43,10 @@ function runTests(singleRun, done) {
   server.start();
 }
 
-gulp.task('test', ['scripts'], function (done) {
+gulp.task('test', ['scripts','other'], function (done) {
   runTests(true, done);
 });
 
-gulp.task('test:auto', ['watch'], function (done) {
+gulp.task('test:auto', ['watch','other'], function (done) {
   runTests(false, done);
 });

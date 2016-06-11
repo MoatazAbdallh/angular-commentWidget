@@ -23,7 +23,7 @@
       vm.updateCommentItem = updateCommentItem;
       CommentsList.getAppComments().then(function (result) {
         vm.commentList = result.map(function (commentItem) {
-          commentItem.creation_date = moment(commentItem.creation_date).format("DD-MM-YYYY HH:MM")
+          commentItem.creation_date = moment(commentItem.creation_date).format("DD-MM-YYYY HH:MM");
           return commentItem
         });
 
